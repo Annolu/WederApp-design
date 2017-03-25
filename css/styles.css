@@ -9,11 +9,11 @@ body {
 
 p {
   text-align: center;
-  color: white; }
+  color: #efefef; }
 
 h1 {
   text-align: center;
-  color: white;
+  color: #efefef;
   font-weight: 300; }
 
 a:hover, a:focus {
@@ -95,7 +95,9 @@ a:hover, a:focus {
       background-position-y: bottom; }
 
 .footer {
-  margin-top: 100px; }
+  width: 100%;
+  position: absolute;
+  bottom: 10px; }
   .footer p {
     font-size: 12px;
     margin-bottom: 0; }
@@ -103,12 +105,14 @@ a:hover, a:focus {
       color: #333; }
 
 .maincontent-wrapper {
-  width: 700px;
+  position: relative;
+  width: 680px;
   height: 100%;
   background-size: contain;
   background-repeat: no-repeat;
-  padding: 70px 0 20px 0;
-  background-image: url(../img/nubes-bkg.png); }
+  padding: 6% 0 20px 0;
+  background-image: url(../img/nubes-bkg.png);
+  background-position-y: 36%; }
   .maincontent-wrapper .content {
     text-align: center; }
     .maincontent-wrapper .content p {
@@ -117,19 +121,23 @@ a:hover, a:focus {
     .maincontent-wrapper .content .weather-img {
       background-size: contain;
       background-repeat: no-repeat;
-      height: 200px;
-      width: 200px;
       display: block;
       margin: 0 auto;
       transform: scale(0.7); }
-      .maincontent-wrapper .content .weather-img.day {
-        background-image: url(../img/sol.svg); }
+      .maincontent-wrapper .content .weather-img.broken-clouds {
+        background-image: url(../img/broken-clouds.svg);
+        height: 120px;
+        width: 200px; }
     .maincontent-wrapper .content .temperature {
       font-size: 62px;
       font-weight: 300; }
     .maincontent-wrapper .content .city {
-      font-size: 50px;
+      font-size: 56px;
       text-shadow: 0px 3px 0px rgba(50, 50, 50, 0.5); }
+    .maincontent-wrapper .content .weather-description {
+      font-size: 27px;
+      font-weight: 300;
+      padding-bottom: 20px; }
 
 .weather-details .keys {
   display: inline-block;
@@ -182,7 +190,7 @@ a:hover, a:focus {
       color: #666; }
 
 .main-search {
-  padding: 40px 0 20px 0; }
+  padding: 30px 0 20px 0; }
   .main-search .input-group {
     width: 380px;
     height: 50px; }
@@ -208,5 +216,12 @@ a:hover, a:focus {
     cursor: pointer; }
     .main-search .input-group-btn .btn-secondary:focus {
       box-shadow: none; }
+
+@media screen and (max-width: 550px) {
+  .maincontent-wrapper {
+    padding-top: 15%; }
+
+  .main-search .input-group {
+    width: 280px; } }
 
 /*# sourceMappingURL=styles.css.map */
