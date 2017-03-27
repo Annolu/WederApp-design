@@ -1,29 +1,37 @@
 
 $(document).ready(function(){
+
+  var burger= $("#burger-container");
+
+  //menu-layer animation on load
+  animateLayers();
+
+  $('.menu-wrapper').addClass('animate-menu');
   //burger icon animation
-  $("#burger-container").on('click', function(){
-    $(this).toggleClass("open");
-  //menu-layer animation
-    animateStuff($(this));
+  burger.on('click', function(){
+    burger.toggleClass("open");
+  //menu-layer animation on click
+  animateLayers();
   });
 
-  function animateStuff(burger){
+  function animateLayers(){
     if(burger.hasClass('open')){
       $('.menu-layer').addClass('menu-down');
+      $('.menu-wrapper').addClass('animate-menu');
       $('.main-content').removeClass('fade-in');
     }else{
       $('.menu-layer').removeClass('menu-down');
       $('.main-content').addClass('fade-in');
     }
   }
+  //menu-layer animation on submit
 
   $( ".input-group" ).submit(function(event) {
     event.preventDefault();
-    if($("#burger-container").hasClass('open')){
-      $("#burger-container").removeClass("open");
+    if(burger.hasClass('open')){
+      burger.removeClass("open");
       $('.menu-layer').removeClass('menu-down');
     }
-
     $('.main-content').addClass('fade-in');
   });
 });

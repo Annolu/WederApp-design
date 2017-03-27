@@ -176,6 +176,9 @@ a:hover, a:focus {
   /* IE6-9 */
   opacity: 1;
   transition: all 400ms ease-in-out; }
+  .menu-layer.menu-down {
+    transform: translateY(1000px);
+    min-height: 400px; }
 
 .menu-wrapper {
   position: relative;
@@ -199,6 +202,23 @@ a:hover, a:focus {
     position: relative;
     bottom: 50px; }
 
+.animate-menu .menu-element:nth-child(3) {
+  bottom: 0;
+  transition: all 300ms ease-in-out 200ms;
+  opacity: 1; }
+.animate-menu .menu-element:nth-child(2) {
+  bottom: 0;
+  transition: all 300ms ease-in-out 400ms;
+  opacity: 1; }
+.animate-menu .menu-element:nth-child(1) {
+  bottom: 0;
+  transition: all 300ms ease-in-out 600ms;
+  opacity: 1; }
+.animate-menu .menu-element:nth-child(0) {
+  bottom: 0;
+  transition: all 300ms ease-in-out 800ms;
+  opacity: 1; }
+
 .main-search {
   padding: 30px 0 20px 0; }
   .main-search .input-group {
@@ -219,7 +239,7 @@ a:hover, a:focus {
         color: #bbb; }
       .main-search .input-group input:hover {
         z-index: 0; }
-  .main-search .input-group-btn .btn-secondary {
+  .main-search .btn-secondary {
     background-color: #A18BB4;
     color: white;
     border: none;
@@ -227,25 +247,8 @@ a:hover, a:focus {
     cursor: pointer;
     font-size: 15px;
     font-weight: 300; }
-    .main-search .input-group-btn .btn-secondary:focus {
+    .main-search .btn-secondary:focus {
       box-shadow: none; }
-
-.menu-down {
-  transform: translateY(1000px);
-  min-height: 400px; }
-
-.menu-wrapper .menu-element:nth-child(3) {
-  bottom: 0;
-  transition: all 400ms ease-in-out 200ms;
-  opacity: 1; }
-.menu-wrapper .menu-element:nth-child(2) {
-  bottom: 0;
-  transition: all 400ms ease-in-out 400ms;
-  opacity: 1; }
-.menu-wrapper .menu-element:nth-child(1) {
-  bottom: 0;
-  transition: all 400ms ease-in-out 600ms;
-  opacity: 1; }
 
 @media screen and (max-width: 550px) {
   .main-search .input-group {
