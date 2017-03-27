@@ -1,0 +1,41 @@
+.burger-layer{
+  height: 60px;
+  width: 100%;
+  z-index: 5;
+}
+
+.burger-container{
+  position: absolute;
+  display: inline-block;
+  top: 20px;
+  right: 20px;
+  transition: all 200ms ease-in-out;
+  .burger{
+    cursor: pointer;
+    span{
+      background: white;
+      display: block;
+      width: 27px;
+      height: 4px;
+      margin-bottom: 6px;
+      position: relative;
+      border-radius: 2px;
+      top: 0;
+      transition: all 400ms ease-in-out;
+    }
+  }
+  &.open{
+    span:nth-child(1){
+        transform: rotate(-45deg);
+        top: 12px;
+    }
+    span:nth-child(2){
+        width: 0;
+        opacity: 0;
+    }
+    span:nth-child(3){
+        transform: rotate(45deg);
+        top: -8px;
+    }
+  }
+}

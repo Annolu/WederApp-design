@@ -13,13 +13,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
   <link rel="stylesheet" href="css/styles.css">
-
 </head>
-
 <body>
   <section class="section burger-layer">
     <div class="burger-menu">
-      <div id="burger-container" class="burger-container">
+      <div id="burger-container" class="burger-container open">
           <div id="burger" class="burger">
               <a>
                  <span>&nbsp;</span>
@@ -35,7 +33,7 @@
       <div class="row">
         <div class="bg-layer d-flex justify-content-center">
           <div class="maincontent-wrapper">
-            <div class="content">
+            <div class="main-content">
               <h1 class="city">Manchester</h1>
               <p class="weather-description">Broken clouds</p>
               <span class="weather-img broken-clouds"></span>
@@ -59,29 +57,30 @@
       </div>
     </div>
   </section>
-  <section class="section menu-layer">
+  <section class="section menu-layer menu-down">
     <div class="container-fluid">
       <div class="d-flex justify-content-center">
         <div class="row">
-          <div class="menu-wrapper">
-            <span class="logo"></span>
-            <div class="main-search">
-              <div class="input-group">
+          <div class="menu-wrapper menu-open">
+            <div class="menu-element">
+              <span class="logo"></span>
+            </div>
+            <div class="menu-element main-search">
+              <form class="input-group">
                 <input type="text" class="form-control" placeholder="Your city name">
                 <span class="input-group-btn">
-                  <button class="btn btn-secondary" type="button">Search</button>
+                  <button class="btn btn-secondary" type="submit">Search</button>
                 </span>
-              </div>
+              </form>
             </div>
-            <div>
-            <p>Made with love and sweat by <a href="#" target="_blank">Rebus.io</a></p>
-          </div>
+            <div class="menu-element">
+              <p>Made with love and sweat by <a href="#" target="_blank">Rebus.io</a></p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
   <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>

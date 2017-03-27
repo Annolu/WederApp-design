@@ -1,0 +1,31 @@
+body,html{
+  height: 100%;
+  width: 100%
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+p{
+  text-align: center;
+  color: #efefef;
+}
+
+h1{
+  text-align: center;
+  color: #efefef;
+  font-weight: 300;
+}
+
+a{
+  &:hover, &:focus{
+    text-decoration: none;
+  }
+}
+
+.section{
+  position: fixed;
+}
