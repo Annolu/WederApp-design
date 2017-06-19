@@ -3,9 +3,6 @@ $(document).ready(function(){
 
   var burger= $("#burger-container");
 
-  //menu-layer animation on load
-  animateLayers();
-
   $('.menu-wrapper').addClass('animate-menu');
   //burger icon animation
   burger.on('click', function(){
@@ -24,9 +21,9 @@ $(document).ready(function(){
       $('.main-content').addClass('fade-in');
     }
   }
+  
   //menu-layer animation on submit
-
-  $( ".input-group" ).submit(function(event) {
+  $ ".input-group").submit(function(event) {
     event.preventDefault();
     if(burger.hasClass('open')){
       burger.removeClass("open");
