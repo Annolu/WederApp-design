@@ -162,7 +162,7 @@ a:hover, a:focus {
 .menu-layer {
   width: 100%;
   height: 100%;
-  bottom: 1000px;
+  bottom: 100vh;
   display: block;
   background: #0085D1;
   background: #0085D1;
@@ -177,7 +177,7 @@ a:hover, a:focus {
   opacity: 1;
   transition: all 400ms ease-in-out; }
   .menu-layer.menu-down {
-    transform: translateY(1000px);
+    transform: translateY(100vh);
     min-height: 400px; }
 
 .menu-wrapper {
